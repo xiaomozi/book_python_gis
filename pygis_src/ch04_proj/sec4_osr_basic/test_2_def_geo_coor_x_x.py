@@ -32,6 +32,6 @@ wkt
 sr2 = osr.SpatialReference()
 sr2.SetUTM( 17, True )
 sr2.SetWellKnownGeogCS( 'WGS84' )
-wkt2 = sr2.ExportToPrettyWkt()
 ###############################################################################
+wkt2 = sr2.ExportToPrettyWkt()
 print(wkt2)

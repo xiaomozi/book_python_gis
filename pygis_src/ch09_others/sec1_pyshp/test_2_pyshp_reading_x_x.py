@@ -65,8 +65,8 @@ len(points)
 ###############################################################################
 shapeRecs = sf.iterShapeRecords()
 for shapeRec in shapeRecs:
-      # do something here
-         pass
+    # do something here
+    pass
 ###############################################################################
 import matplotlib.pyplot as plt
 sf = shapefile.Reader('/gdata/world_borders.shp')
