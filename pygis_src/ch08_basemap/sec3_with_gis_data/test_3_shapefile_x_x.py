@@ -12,7 +12,8 @@ map = Basemap(projection='robin', lat_0=0, lon_0=-100,
 map.drawmapboundary(fill_color='aqua')
 map.fillcontinents(color='#ddaa66',lake_color='aqua')
 map.drawcoastlines()
-map.readshapefile('/gdata/world_borders', 'comarques')
+# map.readshapefile('/gdata/world_borders', 'comarques')
+map.readshapefile('/gdata/GSHHS_c', 'comarques')
 plt.show()
 ###############################################################################
 map = Basemap(llcrnrlon=-0.5,llcrnrlat=39.8,urcrnrlon=4.,urcrnrlat=43.,

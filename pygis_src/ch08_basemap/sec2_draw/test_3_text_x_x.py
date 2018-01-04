@@ -2,24 +2,35 @@
 # -*- coding: utf-8 -*-
 ###############################################################################
 ###############################################################################
+import matplotlib
+matplotlib.rcParams['font.family'] = 'sans-serif'
+matplotlib.rcParams['font.sans-serif'] = ['STKaiti']
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
-my_map = Basemap(projection='merc', lat_0=57, lon_0=-135,
-                 resolution='h', area_thresh=0.1,
-                 llcrnrlon=-136.25, llcrnrlat=56.0,
-                 urcrnrlon=-134.25, urcrnrlat=57.75)
+para = {
+    'projection': 'merc',
+    'lat_0': 0,
+    'lon_0': 120,
+    'resolution': 'h',
+    'area_thresh': .1,
+    'llcrnrlon': 116,
+    'llcrnrlat': 36.6,
+    'urcrnrlon': 124,
+    'urcrnrlat': 40.2
+}
+my_map = Basemap(**para)
 my_map.drawmapboundary(fill_color='aqua')
 my_map.fillcontinents(color='#cc9955',lake_color='aqua')
 my_map.drawcoastlines()
-lon = -135.3318
-lat = 57.07
+lon =  121.60001
+lat = 38.91027
 x, y = my_map(lon, lat)
-plt.text(x, y, 'Lagos',fontsize=12,fontweight='bold',
+plt.text(x, y, '大连',fontsize=12,fontweight='bold',
                     ha='left',va='bottom',color='k')
-lon = -136
-lat = 56.3
+lon = 121.38617
+lat = 37.53042
 x, y = my_map(lon, lat)
-plt.text(x, y, 'Barcelona',fontsize=12,fontweight='bold',
+plt.text(x, y, '烟台',fontsize=12,fontweight='bold',
                     ha='left',va='center',color='k',
                     bbox=dict(facecolor='b', alpha=0.2))
 plt.show()

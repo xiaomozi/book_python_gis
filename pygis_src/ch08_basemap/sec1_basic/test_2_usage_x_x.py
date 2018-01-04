@@ -15,7 +15,6 @@ map = Basemap(projection='ortho',lat_0=0, lon_0=105)
 map.drawmapboundary(fill_color='aqua')
 map.fillcontinents(color= 'coral',lake_color='aqua')
 map.drawcoastlines()
-map.drawcountries()
 plt.show()
 ###############################################################################
 plt.cla()   # Clear axis

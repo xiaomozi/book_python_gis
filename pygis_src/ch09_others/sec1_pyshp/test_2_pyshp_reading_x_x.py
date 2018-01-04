@@ -69,7 +69,7 @@ for shapeRec in shapeRecs:
     pass
 ###############################################################################
 import matplotlib.pyplot as plt
-sf = shapefile.Reader('/gdata/world_borders.shp')
+sf = shapefile.Reader('/gdata/GSHHS_c.shp')
 for shape in sf.shapeRecords():
     x = [i[0] for i in shape.shape.points[:]]
     y = [i[1] for i in shape.shape.points[:]]

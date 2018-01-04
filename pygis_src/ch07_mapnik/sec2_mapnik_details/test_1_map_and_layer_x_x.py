@@ -15,7 +15,7 @@ map.append_style("s1", style3)
 layer = mapnik.Layer('lyrname')
 layer.srs
 ###############################################################################
-ds = mapnik.Shapefile(file='/gdata/world_borders.shp')
+ds = mapnik.Shapefile(file='/gdata/GSHHS_c.shp')
 layer.datasource = ds
 layer.styles.append("s1")
 layer.styles.append("s2")

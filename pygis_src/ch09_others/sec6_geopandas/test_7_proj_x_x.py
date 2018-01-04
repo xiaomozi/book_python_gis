@@ -8,10 +8,10 @@
 ###############################################################################
 import geopandas as gpd
 import matplotlib.pyplot as plt
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+world = gpd.read_file('/gdata/GSHHS_c.shp')
 world.crs
 ###############################################################################
-world = world[(world.name != "Antarctica") & (world.name != "Fr. S. Antarctic Lands")]
+# world = world[(world.name != "Antarctica") & (world.name != "Fr. S. Antarctic Lands")]
 world = world.to_crs({'init': 'epsg:3395'}) # world.to_crs(epsg=3395) would also work
 world.plot()
 plt.show()

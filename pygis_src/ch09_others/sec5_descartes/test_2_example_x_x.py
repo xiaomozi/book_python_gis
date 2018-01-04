@@ -4,7 +4,7 @@
 import shapefile as shp
 import matplotlib.pyplot as plt
 from descartes import PolygonPatch
-polys = shp.Reader('/gdata/world_borders.shp')
+polys = shp.Reader('/gdata/GSHHS_c.shp')
 fig = plt.figure()
 ax = fig.gca()
 for xx in range(polys.numRecords):

@@ -3,13 +3,13 @@
 ###############################################################################
 from osgeo import ogr
 import os
-shpfile = '/gdata/world_borders.shp'
+shpfile = '/gdata/GSHHS_c.shp'
 ds = ogr.Open(shpfile)
 layer = ds.GetLayer(0)
 lyr_count = layer.GetFeatureCount()
 print(lyr_count)
 ###############################################################################
-layer.SetAttributeFilter("AREA > 800000")
+layer.SetAttributeFilter("AREA < 1800000")
 lyr_count = layer.GetFeatureCount()
 print(lyr_count)
 ###############################################################################

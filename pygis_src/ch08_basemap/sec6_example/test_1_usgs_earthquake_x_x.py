@@ -32,7 +32,6 @@ import numpy as np
 eq_map = Basemap(projection='robin', resolution = 'l', area_thresh = 1000.0,
               lat_0=0, lon_0=-130)
 eq_map.drawcoastlines()
-eq_map.drawcountries()
 eq_map.fillcontinents(color = 'gray')
 eq_map.drawmapboundary()
 eq_map.drawmeridians(np.arange(0, 360, 30))
@@ -42,7 +41,6 @@ eq_map.plot(x, y, 'ro', markersize=6)
 plt.show()
 ###############################################################################
 eq_map.drawcoastlines()
-eq_map.drawcountries()
 eq_map.fillcontinents(color = 'gray')
 eq_map.drawmapboundary()
 eq_map.drawmeridians(np.arange(0, 360, 30))
@@ -62,7 +60,6 @@ def get_marker_color(magnitude):
     else:
         return ('ro')
 eq_map.drawcoastlines()
-eq_map.drawcountries()
 eq_map.fillcontinents(color = 'gray')
 eq_map.drawmapboundary()
 eq_map.drawmeridians(np.arange(0, 360, 30))
@@ -76,7 +73,6 @@ for lon, lat, mag in zip(lons, lats, magnitudes):
 plt.show()
 ###############################################################################
 eq_map.drawcoastlines()
-eq_map.drawcountries()
 eq_map.fillcontinents(color = 'gray')
 eq_map.drawmapboundary()
 eq_map.drawmeridians(np.arange(0, 360, 30))
@@ -95,7 +91,6 @@ plt.savefig(get_tmp_file(__file__, '5'), bbox_inches='tight')
 plt.clf()
 ###############################################################################
 eq_map.drawcoastlines()
-eq_map.drawcountries()
 eq_map.bluemarble()
 eq_map.drawmapboundary()
 eq_map.drawmeridians(np.arange(0, 360, 30))

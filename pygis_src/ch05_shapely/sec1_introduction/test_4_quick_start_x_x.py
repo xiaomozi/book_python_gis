@@ -19,16 +19,6 @@ print(polygon.ExportToWkt())
 buf = polygon.Buffer(2)
 buf.ExportToWkt()[:120]
 ###############################################################################
-from numpy import asarray
-a = asarray(point)
-a.size
-a.shape
-###############################################################################
-from shapely.geometry import asLineString
-a = asarray([[1.0, 2.0], [3.0, 4.0]])
-line = asLineString(a)
-print(line.wkt)
-###############################################################################
 from shapely import speedups
 speedups.available
 ###############################################################################

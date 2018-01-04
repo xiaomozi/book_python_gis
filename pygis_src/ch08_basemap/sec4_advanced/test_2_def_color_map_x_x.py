@@ -7,7 +7,6 @@ from osgeo import gdal
 from numpy import linspace
 from numpy import meshgrid
 from matplotlib.colors import LinearSegmentedColormap
-# from helper import get_tmp_file
 cmap1 = LinearSegmentedColormap.from_list("my_colormap", ((0, 0, 0), (1, 1, 1)), N=6, gamma=1.0)
 ###############################################################################
 map = Basemap(projection='tmerc',

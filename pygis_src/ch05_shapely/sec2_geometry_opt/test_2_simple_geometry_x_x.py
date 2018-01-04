@@ -35,5 +35,3 @@ t.area
 from shapely.geometry import Polygon, box
 b = box(0.0, 0.0, 1.0, 1.0)
 list(b.exterior.coords)
-###############################################################################
-b.orient(polygon,sign=1.0)

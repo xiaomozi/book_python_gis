@@ -7,7 +7,6 @@ import numpy as np
 my_map = Basemap(projection='ortho', lat_0=0, lon_0=-100,
                  resolution='l', area_thresh=1000.0)
 my_map.drawcoastlines()
-my_map.drawcountries()
 my_map.fillcontinents(color='coral')
 my_map.drawmapboundary()
 my_map.drawmeridians(np.arange(0, 360, 30))
